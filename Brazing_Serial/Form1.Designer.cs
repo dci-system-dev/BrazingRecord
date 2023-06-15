@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PN_TOOLBAR = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.LB_ST = new System.Windows.Forms.Label();
+            this.LB_LI = new System.Windows.Forms.Label();
+            this.LB_IP = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbtime = new System.Windows.Forms.Label();
@@ -38,8 +42,8 @@
             this.lb_Line = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.PN_OPERATING = new System.Windows.Forms.Panel();
+            this.PN_STATUS_READER = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.lb_Status = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -53,7 +57,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.PN_STATION_NO = new System.Windows.Forms.Panel();
             this.txtBZ = new System.Windows.Forms.TextBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.lb_Alarm = new System.Windows.Forms.Label();
@@ -82,13 +86,13 @@
             this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker6 = new System.ComponentModel.BackgroundWorker();
-            this.panel1.SuspendLayout();
+            this.PN_TOOLBAR.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.PN_OPERATING.SuspendLayout();
+            this.PN_STATUS_READER.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -96,7 +100,7 @@
             this.PN_topbot.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.PN_STATION_NO.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -106,26 +110,70 @@
             this.panel18.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PN_TOOLBAR
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 120);
-            this.panel1.TabIndex = 0;
+            this.PN_TOOLBAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PN_TOOLBAR.Controls.Add(this.panel5);
+            this.PN_TOOLBAR.Controls.Add(this.panel4);
+            this.PN_TOOLBAR.Controls.Add(this.panel2);
+            this.PN_TOOLBAR.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PN_TOOLBAR.Location = new System.Drawing.Point(0, 0);
+            this.PN_TOOLBAR.Name = "PN_TOOLBAR";
+            this.PN_TOOLBAR.Size = new System.Drawing.Size(1600, 120);
+            this.PN_TOOLBAR.TabIndex = 0;
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.LB_ST);
+            this.panel5.Controls.Add(this.LB_LI);
+            this.panel5.Controls.Add(this.LB_IP);
+            this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(168, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(888, 120);
+            this.panel5.Size = new System.Drawing.Size(1102, 120);
             this.panel5.TabIndex = 2;
+            // 
+            // LB_ST
+            // 
+            this.LB_ST.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.LB_ST.ForeColor = System.Drawing.Color.Red;
+            this.LB_ST.Location = new System.Drawing.Point(2, 42);
+            this.LB_ST.Name = "LB_ST";
+            this.LB_ST.Size = new System.Drawing.Size(142, 23);
+            this.LB_ST.TabIndex = 7;
+            this.LB_ST.Text = "ST : ";
+            // 
+            // LB_LI
+            // 
+            this.LB_LI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.LB_LI.ForeColor = System.Drawing.Color.Red;
+            this.LB_LI.Location = new System.Drawing.Point(2, 22);
+            this.LB_LI.Name = "LB_LI";
+            this.LB_LI.Size = new System.Drawing.Size(144, 19);
+            this.LB_LI.TabIndex = 6;
+            this.LB_LI.Text = "LINE : ";
+            // 
+            // LB_IP
+            // 
+            this.LB_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.LB_IP.ForeColor = System.Drawing.Color.Red;
+            this.LB_IP.Location = new System.Drawing.Point(2, 4);
+            this.LB_IP.Name = "LB_IP";
+            this.LB_IP.Size = new System.Drawing.Size(144, 23);
+            this.LB_IP.TabIndex = 5;
+            this.LB_IP.Text = "IP SR : ";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(5, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(405, 23);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "V1.1 แก้ไข Master CheckIn By.Peerapong.k (15/06/2023)";
             // 
             // label2
             // 
@@ -133,7 +181,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(888, 120);
+            this.label2.Size = new System.Drawing.Size(1102, 120);
             this.label2.TabIndex = 0;
             this.label2.Text = "Serial And Brazing Record";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +190,7 @@
             // 
             this.panel4.Controls.Add(this.lbtime);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1056, 0);
+            this.panel4.Location = new System.Drawing.Point(1270, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(330, 120);
             this.panel4.TabIndex = 1;
@@ -213,27 +261,27 @@
             this.label1.Text = "Line";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // PN_OPERATING
             // 
-            this.panel6.BackColor = System.Drawing.Color.Teal;
-            this.panel6.Controls.Add(this.panel10);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 120);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1386, 160);
-            this.panel6.TabIndex = 1;
+            this.PN_OPERATING.BackColor = System.Drawing.Color.Teal;
+            this.PN_OPERATING.Controls.Add(this.PN_STATUS_READER);
+            this.PN_OPERATING.Controls.Add(this.panel9);
+            this.PN_OPERATING.Controls.Add(this.panel8);
+            this.PN_OPERATING.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PN_OPERATING.Location = new System.Drawing.Point(0, 120);
+            this.PN_OPERATING.Name = "PN_OPERATING";
+            this.PN_OPERATING.Size = new System.Drawing.Size(1600, 188);
+            this.PN_OPERATING.TabIndex = 1;
             // 
-            // panel10
+            // PN_STATUS_READER
             // 
-            this.panel10.Controls.Add(this.panel12);
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(736, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(0, 160);
-            this.panel10.TabIndex = 2;
+            this.PN_STATUS_READER.Controls.Add(this.panel12);
+            this.PN_STATUS_READER.Controls.Add(this.panel11);
+            this.PN_STATUS_READER.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PN_STATUS_READER.Location = new System.Drawing.Point(587, 0);
+            this.PN_STATUS_READER.Name = "PN_STATUS_READER";
+            this.PN_STATUS_READER.Size = new System.Drawing.Size(209, 188);
+            this.PN_STATUS_READER.TabIndex = 2;
             // 
             // panel12
             // 
@@ -242,7 +290,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(0, 43);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(0, 117);
+            this.panel12.Size = new System.Drawing.Size(209, 145);
             this.panel12.TabIndex = 1;
             // 
             // lb_Status
@@ -251,7 +299,7 @@
             this.lb_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lb_Status.Location = new System.Drawing.Point(0, 0);
             this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(0, 117);
+            this.lb_Status.Size = new System.Drawing.Size(209, 145);
             this.lb_Status.TabIndex = 0;
             this.lb_Status.Text = "OK";
             this.lb_Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -263,7 +311,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(0, 43);
+            this.panel11.Size = new System.Drawing.Size(209, 43);
             this.panel11.TabIndex = 0;
             // 
             // label6
@@ -273,7 +321,7 @@
             this.label6.ForeColor = System.Drawing.Color.Yellow;
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 43);
+            this.label6.Size = new System.Drawing.Size(205, 39);
             this.label6.TabIndex = 0;
             this.label6.Text = "Status Reader";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -282,20 +330,20 @@
             // 
             this.panel9.Controls.Add(this.label5);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(409, 0);
+            this.panel9.Location = new System.Drawing.Point(796, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(977, 160);
+            this.panel9.Size = new System.Drawing.Size(804, 188);
             this.panel9.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label5.ForeColor = System.Drawing.Color.Yellow;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(977, 160);
+            this.label5.Size = new System.Drawing.Size(804, 188);
             this.label5.TabIndex = 0;
             this.label5.Text = "Serial And Brazing History";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,18 +355,18 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(736, 160);
+            this.panel8.Size = new System.Drawing.Size(587, 188);
             this.panel8.TabIndex = 0;
             // 
             // lbOperationg
             // 
             this.lbOperationg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbOperationg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbOperationg.Font = new System.Drawing.Font("Microsoft Sans Serif", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbOperationg.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbOperationg.ForeColor = System.Drawing.Color.Yellow;
             this.lbOperationg.Location = new System.Drawing.Point(0, 0);
             this.lbOperationg.Name = "lbOperationg";
-            this.lbOperationg.Size = new System.Drawing.Size(736, 82);
+            this.lbOperationg.Size = new System.Drawing.Size(587, 106);
             this.lbOperationg.TabIndex = 0;
             this.lbOperationg.Text = "Operating";
             this.lbOperationg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -328,9 +376,9 @@
             this.PN_topbot.Controls.Add(this.lbCountWelding);
             this.PN_topbot.Controls.Add(this.label3);
             this.PN_topbot.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PN_topbot.Location = new System.Drawing.Point(0, 82);
+            this.PN_topbot.Location = new System.Drawing.Point(0, 106);
             this.PN_topbot.Name = "PN_topbot";
-            this.PN_topbot.Size = new System.Drawing.Size(736, 78);
+            this.PN_topbot.Size = new System.Drawing.Size(587, 82);
             this.PN_topbot.TabIndex = 1;
             // 
             // lbCountWelding
@@ -342,7 +390,7 @@
             this.lbCountWelding.ForeColor = System.Drawing.Color.Black;
             this.lbCountWelding.Location = new System.Drawing.Point(336, 0);
             this.lbCountWelding.Name = "lbCountWelding";
-            this.lbCountWelding.Size = new System.Drawing.Size(400, 78);
+            this.lbCountWelding.Size = new System.Drawing.Size(251, 82);
             this.lbCountWelding.TabIndex = 6;
             this.lbCountWelding.Text = "0";
             this.lbCountWelding.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -355,7 +403,7 @@
             this.label3.ForeColor = System.Drawing.Color.Yellow;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(336, 78);
+            this.label3.Size = new System.Drawing.Size(336, 82);
             this.label3.TabIndex = 5;
             this.label3.Text = "Top Buttom Welding\r\n  Actual";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -367,47 +415,46 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dataGridView1.Location = new System.Drawing.Point(409, 280);
+            this.dataGridView1.Location = new System.Drawing.Point(796, 308);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(977, 508);
+            this.dataGridView1.Size = new System.Drawing.Size(804, 592);
             this.dataGridView1.TabIndex = 2;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.panel14);
+            this.panel7.Controls.Add(this.PN_STATION_NO);
             this.panel7.Controls.Add(this.panel13);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 280);
+            this.panel7.Location = new System.Drawing.Point(0, 308);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(409, 508);
+            this.panel7.Size = new System.Drawing.Size(796, 592);
             this.panel7.TabIndex = 3;
             // 
-            // panel14
+            // PN_STATION_NO
             // 
-            this.panel14.BackColor = System.Drawing.Color.Black;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.txtBZ);
-            this.panel14.Controls.Add(this.panel16);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 296);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(409, 212);
-            this.panel14.TabIndex = 1;
+            this.PN_STATION_NO.BackColor = System.Drawing.Color.Black;
+            this.PN_STATION_NO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PN_STATION_NO.Controls.Add(this.txtBZ);
+            this.PN_STATION_NO.Controls.Add(this.panel16);
+            this.PN_STATION_NO.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PN_STATION_NO.Location = new System.Drawing.Point(0, 404);
+            this.PN_STATION_NO.Name = "PN_STATION_NO";
+            this.PN_STATION_NO.Size = new System.Drawing.Size(796, 188);
+            this.PN_STATION_NO.TabIndex = 1;
             // 
             // txtBZ
             // 
             this.txtBZ.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtBZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtBZ.Location = new System.Drawing.Point(0, 100);
+            this.txtBZ.Location = new System.Drawing.Point(0, 77);
             this.txtBZ.MaxLength = 1;
             this.txtBZ.Multiline = true;
             this.txtBZ.Name = "txtBZ";
-            this.txtBZ.Size = new System.Drawing.Size(407, 111);
+            this.txtBZ.Size = new System.Drawing.Size(794, 111);
             this.txtBZ.TabIndex = 7;
-            this.txtBZ.Text = "18";
             this.txtBZ.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBZ_KeyUp);
             // 
             // panel16
@@ -418,18 +465,18 @@
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(407, 100);
+            this.panel16.Size = new System.Drawing.Size(794, 77);
             this.panel16.TabIndex = 6;
             // 
             // lb_Alarm
             // 
             this.lb_Alarm.AutoSize = true;
             this.lb_Alarm.BackColor = System.Drawing.Color.White;
-            this.lb_Alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lb_Alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lb_Alarm.ForeColor = System.Drawing.Color.Red;
-            this.lb_Alarm.Location = new System.Drawing.Point(353, 38);
+            this.lb_Alarm.Location = new System.Drawing.Point(343, 24);
             this.lb_Alarm.Name = "lb_Alarm";
-            this.lb_Alarm.Size = new System.Drawing.Size(582, 42);
+            this.lb_Alarm.Size = new System.Drawing.Size(431, 31);
             this.lb_Alarm.TabIndex = 1;
             this.lb_Alarm.Text = "กรอก Brazing No ให้ถูกต้องด้วยครับ";
             // 
@@ -441,7 +488,7 @@
             this.label7.ForeColor = System.Drawing.Color.Yellow;
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(407, 100);
+            this.label7.Size = new System.Drawing.Size(794, 77);
             this.label7.TabIndex = 0;
             this.label7.Text = "Station No";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -456,7 +503,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(409, 508);
+            this.panel13.Size = new System.Drawing.Size(796, 592);
             this.panel13.TabIndex = 0;
             // 
             // txtSerial
@@ -464,11 +511,11 @@
             this.txtSerial.BackColor = System.Drawing.Color.White;
             this.txtSerial.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtSerial.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtSerial.Location = new System.Drawing.Point(0, 396);
+            this.txtSerial.Location = new System.Drawing.Point(0, 311);
             this.txtSerial.Multiline = true;
             this.txtSerial.Name = "txtSerial";
             this.txtSerial.ReadOnly = true;
-            this.txtSerial.Size = new System.Drawing.Size(407, 96);
+            this.txtSerial.Size = new System.Drawing.Size(794, 123);
             this.txtSerial.TabIndex = 9;
             // 
             // panel17
@@ -478,9 +525,9 @@
             this.panel17.Controls.Add(this.panel19);
             this.panel17.Controls.Add(this.label8);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 289);
+            this.panel17.Location = new System.Drawing.Point(0, 204);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(407, 107);
+            this.panel17.Size = new System.Drawing.Size(794, 107);
             this.panel17.TabIndex = 8;
             // 
             // btn_reset
@@ -488,7 +535,7 @@
             this.btn_reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_reset.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btn_reset.Location = new System.Drawing.Point(86, 0);
+            this.btn_reset.Location = new System.Drawing.Point(515, 0);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(152, 107);
             this.btn_reset.TabIndex = 2;
@@ -501,9 +548,9 @@
             this.panel19.Controls.Add(this.lb_SR1000);
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel19.Location = new System.Drawing.Point(238, 0);
+            this.panel19.Location = new System.Drawing.Point(667, 0);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(169, 107);
+            this.panel19.Size = new System.Drawing.Size(127, 107);
             this.panel19.TabIndex = 1;
             // 
             // lb_SR1000
@@ -514,7 +561,7 @@
             this.lb_SR1000.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lb_SR1000.Location = new System.Drawing.Point(0, 44);
             this.lb_SR1000.Name = "lb_SR1000";
-            this.lb_SR1000.Size = new System.Drawing.Size(169, 63);
+            this.lb_SR1000.Size = new System.Drawing.Size(127, 63);
             this.lb_SR1000.TabIndex = 1;
             this.lb_SR1000.Text = "WAIT";
             this.lb_SR1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -526,7 +573,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(169, 44);
+            this.panel20.Size = new System.Drawing.Size(127, 44);
             this.panel20.TabIndex = 0;
             // 
             // label11
@@ -537,7 +584,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(0, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(169, 44);
+            this.label11.Size = new System.Drawing.Size(127, 44);
             this.label11.TabIndex = 0;
             this.label11.Text = "SR1000 Connecttion";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -550,7 +597,7 @@
             this.label8.ForeColor = System.Drawing.Color.Yellow;
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(407, 107);
+            this.label8.Size = new System.Drawing.Size(794, 107);
             this.label8.TabIndex = 0;
             this.label8.Text = "Serial No";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -563,7 +610,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(407, 289);
+            this.panel15.Size = new System.Drawing.Size(794, 204);
             this.panel15.TabIndex = 0;
             // 
             // lbActual
@@ -572,9 +619,9 @@
             this.lbActual.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbActual.ForeColor = System.Drawing.Color.Lime;
-            this.lbActual.Location = new System.Drawing.Point(473, 0);
+            this.lbActual.Location = new System.Drawing.Point(392, 0);
             this.lbActual.Name = "lbActual";
-            this.lbActual.Size = new System.Drawing.Size(0, 289);
+            this.lbActual.Size = new System.Drawing.Size(402, 204);
             this.lbActual.TabIndex = 1;
             this.lbActual.Text = "0";
             this.lbActual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -586,18 +633,18 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(473, 289);
+            this.panel18.Size = new System.Drawing.Size(392, 204);
             this.panel18.TabIndex = 0;
             // 
             // label9
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 99.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 85F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(0, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(473, 289);
+            this.label9.Size = new System.Drawing.Size(392, 204);
             this.label9.TabIndex = 0;
             this.label9.Text = "Actual";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -657,22 +704,23 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PN_OPERATING);
+            this.Controls.Add(this.PN_TOOLBAR);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
+            this.PN_TOOLBAR.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
+            this.PN_OPERATING.ResumeLayout(false);
+            this.PN_STATUS_READER.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -680,8 +728,8 @@
             this.PN_topbot.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
+            this.PN_STATION_NO.ResumeLayout(false);
+            this.PN_STATION_NO.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -697,7 +745,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PN_TOOLBAR;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
@@ -706,8 +754,8 @@
         private System.Windows.Forms.Label lb_Line;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel PN_OPERATING;
+        private System.Windows.Forms.Panel PN_STATUS_READER;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label lb_Status;
         private System.Windows.Forms.Panel panel11;
@@ -718,7 +766,7 @@
         private System.Windows.Forms.Label lbOperationg;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel PN_STATION_NO;
         private System.Windows.Forms.Panel panel13;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txtBZ;
@@ -750,6 +798,10 @@
         private System.Windows.Forms.Label lbCountWelding;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LB_IP;
+        private System.Windows.Forms.Label LB_ST;
+        private System.Windows.Forms.Label LB_LI;
     }
 }
 

@@ -29,7 +29,6 @@ namespace Brazing_Serial
             InitializeComponent();
         }
 
-
         private void txtBZ_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -106,14 +105,7 @@ namespace Brazing_Serial
             }
             dt = new DataTable();
             SqlCommand sql = new SqlCommand();
-            sql.CommandText = @" SELECT CASE
-    WHEN SerialNo = '' THEN CONCAT('No Serial',' : (',EmpCode,')',' ',FORMAT(StampTime,'dd/MM/yyyy HH:mm:ss'))
-   
-    ELSE CONCAT(SerialNo,' : (',EmpCode,')',' ',FORMAT(StampTime,'dd/MM/yyyy HH:mm:ss'))
-END  Serial
-            FROM [dbIoTFac2].[dbo].[etd_leak_check]
-            where LineName =@Line and StampTime between @startdate and @enddate 
-            order by StampTime desc";
+            sql.CommandText = @" SELECT CASE WHEN SerialNo = '' THEN CONCAT('No Serial',' : (',EmpCode,')',' ',FORMAT(StampTime,'dd/MM/yyyy HH:mm:ss')) ELSE CONCAT(SerialNo,' : (',EmpCode,')',' ',FORMAT(StampTime,'dd/MM/yyyy HH:mm:ss')) END  Serial FROM [dbIoTFac2].[dbo].[etd_leak_check] where LineName =@Line and StampTime between @startdate and @enddate order by StampTime desc";
             sql.Parameters.Add(new SqlParameter("@Line", Properties.Settings.Default.Line));
             sql.Parameters.Add(new SqlParameter("@startdate", ST));
             sql.Parameters.Add(new SqlParameter("@enddate", ED));
@@ -149,15 +141,9 @@ END  Serial
             lb_Alarm.Hide();
             if (Value2 == "1" || Value2 == "2" || Value2 == "3")
             {
-
-
                 string Number = Value2;
                 //string a = txtInput.Text;
                 SaveData(Number);
-
-
-
-
             }
             else
             {
@@ -206,7 +192,12 @@ END  Serial
                 //{
                 if (Brazing_No.Trim() == "1")
                 {
-                    string emp = CGR.GetcheckBrazing(Brazing_No.Trim(), "main" + Properties.Settings.Default.Line);
+                    // PRE MODIFY string emp = CGR.GetcheckBrazing(Brazing_No.Trim(), "main" + Properties.Settings.Default.Line);
+
+                    // MODIFY > ปรับมาใช้ 226.86 dbSCM SKC_CHECKINOUTLOG BY.PEERAPONG.K
+                    string emp = CGR.GetcheckBrazing(Brazing_No.Trim(),Properties.Settings.Default.Line,LB_LI,LB_ST);
+                    // END MODIFY > PEERAPONG.K
+                   
                     if (emp != "")
                     {
                         std.AppendLine("insert into [dbIoTFac2].[dbo].[etd_leak_check]([SerialNo],[Brazing],[LineName],[StampTime],[EmpCode]) values('" + txtSerial.Text.Trim() + "','" + Brazing_No.Trim() + "','" + Properties.Settings.Default.Line + "',GETDATE(),'" + emp + "')");
@@ -273,13 +264,16 @@ END  Serial
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            //string emp = CGR.GetcheckBrazing("1","1");
             if (Properties.Settings.Default.topbot == false)
             {
                 PN_topbot.Hide();
                 lbOperationg.Font = new Font("Microsoft Sans Serif", 72, FontStyle.Bold);
             }
+            //this.TopMost = true;
 
-            this.TopMost = true;
+
+
             this.WindowState = FormWindowState.Maximized;
             txtSerial.Text = "";
             //  txtSerial.Text = "012601062671080006";
@@ -307,11 +301,6 @@ END  Serial
             //timer4.Start();
             txtBZ.SelectAll();
             txtBZ.Focus();
-
-
-
-
-
         }
 
         private void ChangeColorGrid()
@@ -352,9 +341,6 @@ END  Serial
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-
-
-
             while (true)
             {
                 try
@@ -390,10 +376,9 @@ END  Serial
         }
         private void StartConnection(string IP, int Port)
         {
+            LB_IP.Text = IP;
             try
             {
-
-
                 if (client == null)
                 {
                     client = new TcpClient(IP, Port);
@@ -448,9 +433,18 @@ END  Serial
 
         private void lb_Line_Click(object sender, EventArgs e)
         {
-            frmLine frmline = new frmLine();
-            frmline.ShowDialog();
-            lb_Line.Text = CGenaral.Line.ToString();
+            using (var fromLine = new frmLine())
+            {
+                var result = fromLine.ShowDialog();
+                if (result.Equals(DialogResult.OK))
+                {
+                    lb_Line.Text = Properties.Settings.Default.Line;
+                    LB_LI.Text = ("LINE : " + Properties.Settings.Default.Line);
+                }
+            }
+            //frmLine frmline = new frmLine();
+            //frmline.ShowDialog();
+            
 
             //if (!backgroundWorker2.IsBusy)
             //{
@@ -473,15 +467,11 @@ END  Serial
                     {
                         lb_SR1000.Invoke(new Action(() => lb_SR1000.Text = "OFF"));
                         lb_SR1000.Invoke(new Action(() => lb_SR1000.BackColor = Color.Red));
-
-                       
                     }
                     else if (PingHost(CGenaral.IP) == true)
                     {
                         StartConnection(Properties.Settings.Default.IP, Properties.Settings.Default.Port);
-
                     }
-
                 }
                 else
                 {

@@ -86,3 +86,22 @@ C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080
 C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
 C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
 C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.application
+D:\git\BrazingRecord\Brazing_Serial\bin\Debug\Brazing_Serial.exe.config
+D:\git\BrazingRecord\Brazing_Serial\bin\Debug\Brazing_Serial.exe.manifest
+D:\git\BrazingRecord\Brazing_Serial\bin\Debug\Brazing_Serial.application
+D:\git\BrazingRecord\Brazing_Serial\bin\Debug\Brazing_Serial.exe
+D:\git\BrazingRecord\Brazing_Serial\bin\Debug\Brazing_Serial.pdb
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.AssemblyReference.cache
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.Form1.resources
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.frmLine.resources
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.frmLogin.resources
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.frmPopupRubberCheck.resources
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.frmSetting.resources
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.Properties.Resources.resources
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.GenerateResource.cache
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.CoreCompileInputs.cache
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.application
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.exe
+D:\git\BrazingRecord\Brazing_Serial\obj\Debug\Brazing_Serial.pdb

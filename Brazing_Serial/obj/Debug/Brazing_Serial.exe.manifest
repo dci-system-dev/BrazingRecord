@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Brazing_Serial.exe" size="52224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Brazing_Serial.exe" size="53760">
       <assemblyIdentity name="Brazing_Serial" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HzE3lGwph1Xq/PVVavJv1xUxCmtjOQSrcLJ2y6ucgj4=</dsig:DigestValue>
+        <dsig:DigestValue>UbG+3XlV7xFWtjgoz46ViTzcfRYB/N9ZiNPHKgP9Xls=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>/YL+wgf4dXcAzgRxVWBf3GLlEeTzHwh60jRxbXFPrx8=</dsig:DigestValue>
+      <dsig:DigestValue>JQdlwAAVJpSr7ZtmDlJu9cQs/RImwr3HTQaGkfqoo+4=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

@@ -14,7 +14,7 @@
   where Date_insert between @ST and @ED</Value>
     </Setting>
     <Setting Name="Line" Type="System.String" Scope="User">
-      <Value Profile="(Default)">7</Value>
+      <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="topbot" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

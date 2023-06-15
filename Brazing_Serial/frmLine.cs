@@ -19,14 +19,17 @@ namespace Brazing_Serial
 
         private void frmLine_Load(object sender, EventArgs e)
         {
-            this.comboBox1.SelectedIndex = 0;
+            int index = comboBox1.Items.IndexOf(Properties.Settings.Default.Line);
+            this.comboBox1.SelectedIndex = index;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem.ToString() != "")
             {
-                CGenaral.Line = comboBox1.SelectedItem.ToString();
+                DialogResult = DialogResult.OK;
+                Properties.Settings.Default.Line = comboBox1.SelectedItem.ToString();
+                Properties.Settings.Default.Save();
                 this.Close();
             }
 

@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CGenaral.cs" />
+    <Compile Include="ConnectDBSCM.cs" />
     <Compile Include="ConnectDBIoT.cs" />
     <Compile Include="ConnectDB.cs" />
     <Compile Include="Form1.cs">
