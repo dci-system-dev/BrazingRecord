@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://192.168.226.19:8021/BrazingAndSerial/|ftp://192.168.226.19:8021/BrazingAndSerial/Brazing_Serial/|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://websrv01.dci.daikin.co.jp/dciapp/BrazingAndSerial/|http://websrv01.dci.daikin.co.jp/dciapp/partStockMechaL3/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

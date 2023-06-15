@@ -1,0 +1,88 @@
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.exe.config
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.exe
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.pdb
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.csprojResolveAssemblyReference.cache
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.Form1.resources
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.Properties.Resources.resources
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.GenerateResource.Cache
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.exe
+c:\users\somrak.s\documents\visual studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.pdb
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmSetting.resources
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmLogin.resources
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.exe.manifest
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.application
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.application
+C:\Users\somrak.s\Documents\Visual Studio 2013\Projects\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmLine.resources
+D:\Project\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.exe.config
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.exe
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.pdb
+D:\Project\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.exe.manifest
+D:\Project\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.application
+D:\Project\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.exe
+D:\Project\Brazing_Serial\Brazing_Serial\bin\Debug\Brazing_Serial.pdb
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.Form1.resources
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmLine.resources
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmLogin.resources
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmSetting.resources
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.Properties.Resources.resources
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.GenerateResource.Cache
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.application
+D:\Project\Brazing_Serial\Brazing_Serial\obj\Debug\Brazing_Serial.frmPopupRubberCheck.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\bin\Debug\Brazing_Serial.exe.config
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.exe
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.pdb
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\bin\Debug\Brazing_Serial.exe.manifest
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\bin\Debug\Brazing_Serial.application
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\bin\Debug\Brazing_Serial.exe
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\bin\Debug\Brazing_Serial.pdb
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.Form1.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.frmLine.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.frmLogin.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.frmPopupRubberCheck.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.frmSetting.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.Properties.Resources.resources
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.GenerateResource.Cache
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.application
+D:\Project\Brazing_Serial_1920_1080\Brazing_Serial\obj\Debug\Brazing_Serial.csprojResolveAssemblyReference.cache
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.exe.config
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.exe
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.pdb
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.exe.manifest
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.application
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.exe
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.pdb
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.csprojResolveAssemblyReference.cache
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.Form1.resources
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmLine.resources
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmLogin.resources
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmPopupRubberCheck.resources
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmSetting.resources
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.Properties.Resources.resources
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.GenerateResource.Cache
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
+D:\Project\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.application
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.exe.config
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.exe
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.pdb
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.exe.manifest
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.application
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.exe
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\bin\Debug\Brazing_Serial.pdb
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.csprojResolveAssemblyReference.cache
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.Form1.resources
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmLine.resources
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmLogin.resources
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmPopupRubberCheck.resources
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.frmSetting.resources
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.Properties.Resources.resources
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.csproj.GenerateResource.Cache
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.TrustInfo.xml
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.exe.manifest
+C:\Users\thanwa.p\Documents\Visual Studio 2013\Projects\Brazing_Serial_1920_1080_Unown_Station\Brazing_Serial\obj\Debug\Brazing_Serial.application
