@@ -144,6 +144,7 @@ namespace Brazing_Serial
                 string Number = Value2;
                 //string a = txtInput.Text;
                 SaveData(Number);
+                LB_CHECK.Text = "KEY_UP";
             }
             else
             {
@@ -179,6 +180,7 @@ namespace Brazing_Serial
 
             txtBZ.Text = txtBZ.Text.Replace("\r\n", "");
             StringBuilder std = new StringBuilder();
+            //if (txtSerial.Text != "" && !txtSerial.Text.Contains("ERROR"))
             if (txtSerial.Text != "" && !txtSerial.Text.Contains("ERROR"))
             {
                 //  string CheckRubber = "1";
@@ -190,7 +192,7 @@ namespace Brazing_Serial
                 //}
                 //if (CGR.GetcheckBrazing(txtBZ.Text, Properties.Settings.Default.Line) == true)
                 //{
-                if (Brazing_No.Trim() == "1")
+                if (Brazing_No.Trim() != "")
                 {
                     // PRE MODIFY string emp = CGR.GetcheckBrazing(Brazing_No.Trim(), "main" + Properties.Settings.Default.Line);
 
@@ -252,11 +254,6 @@ namespace Brazing_Serial
                 txtBZ.SelectAll();
                 txtBZ.Focus();
             }
-
-
-
-
-
         }
         private void txtInput_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -347,24 +344,19 @@ namespace Brazing_Serial
                 {
                     if (client.Connected == true)
                     {
-                        // Get a client stream for reading and writing.
                         Byte[] data = new Byte[256];
-                        //  System.IO.Stream stream = client.GetStream();
-
                         NetworkStream stream = client.GetStream(); // Stream Recieve TCP 
-
-
-
-                        //   String to store the response ASCII representation.
                         String responseData = String.Empty;
-
-                        // Read the first batch of the TcpServer response bytes.
                         Int32 bytes = stream.Read(data, 0, data.Length);
-                        responseData = System.Text.Encoding.ASCII.GetString(data, 0, bytes);
-                        Console.WriteLine("(:)" + responseData);
+                        responseData = Encoding.ASCII.GetString(data, 0, bytes);
+                        LB_SERIAL.Text = responseData;
+                        //txtSerial.Invoke(new Action(() => txtSerial.Text = responseData));
 
-                        txtSerial.Invoke(new Action(() => txtSerial.Text = responseData));
-                        SaveData("1");
+                        //MODIFY BY.PEERAPONG_K
+                        txtSerial.Invoke(new Action(() => txtSerial.Text = (responseData.Contains("ERROR") ? "" : responseData)));
+                        //END
+                        //SaveData("1");
+                        LB_CHECK.Text = "VISION";
                     }
                 }
                 catch (Exception)

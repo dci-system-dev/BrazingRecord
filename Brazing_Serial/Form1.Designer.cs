@@ -86,6 +86,8 @@
             this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker6 = new System.ComponentModel.BackgroundWorker();
+            this.LB_SERIAL = new System.Windows.Forms.Label();
+            this.LB_CHECK = new System.Windows.Forms.Label();
             this.PN_TOOLBAR.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -124,6 +126,8 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.LB_CHECK);
+            this.panel5.Controls.Add(this.LB_SERIAL);
             this.panel5.Controls.Add(this.LB_ST);
             this.panel5.Controls.Add(this.LB_LI);
             this.panel5.Controls.Add(this.LB_IP);
@@ -141,7 +145,7 @@
             this.LB_ST.ForeColor = System.Drawing.Color.Red;
             this.LB_ST.Location = new System.Drawing.Point(2, 42);
             this.LB_ST.Name = "LB_ST";
-            this.LB_ST.Size = new System.Drawing.Size(142, 23);
+            this.LB_ST.Size = new System.Drawing.Size(118, 23);
             this.LB_ST.TabIndex = 7;
             this.LB_ST.Text = "ST : ";
             // 
@@ -151,7 +155,7 @@
             this.LB_LI.ForeColor = System.Drawing.Color.Red;
             this.LB_LI.Location = new System.Drawing.Point(2, 22);
             this.LB_LI.Name = "LB_LI";
-            this.LB_LI.Size = new System.Drawing.Size(144, 19);
+            this.LB_LI.Size = new System.Drawing.Size(120, 19);
             this.LB_LI.TabIndex = 6;
             this.LB_LI.Text = "LINE : ";
             // 
@@ -161,7 +165,7 @@
             this.LB_IP.ForeColor = System.Drawing.Color.Red;
             this.LB_IP.Location = new System.Drawing.Point(2, 4);
             this.LB_IP.Name = "LB_IP";
-            this.LB_IP.Size = new System.Drawing.Size(144, 23);
+            this.LB_IP.Size = new System.Drawing.Size(120, 23);
             this.LB_IP.TabIndex = 5;
             this.LB_IP.Text = "IP SR : ";
             // 
@@ -699,6 +703,25 @@
             // 
             this.backgroundWorker6.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker6_DoWork);
             // 
+            // LB_SERIAL
+            // 
+            this.LB_SERIAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.LB_SERIAL.ForeColor = System.Drawing.Color.Red;
+            this.LB_SERIAL.Location = new System.Drawing.Point(2, 61);
+            this.LB_SERIAL.Name = "LB_SERIAL";
+            this.LB_SERIAL.Size = new System.Drawing.Size(118, 23);
+            this.LB_SERIAL.TabIndex = 8;
+            this.LB_SERIAL.Text = "SERIAL : ";
+            // 
+            // LB_CHECK
+            // 
+            this.LB_CHECK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.LB_CHECK.ForeColor = System.Drawing.Color.Red;
+            this.LB_CHECK.Location = new System.Drawing.Point(1, 80);
+            this.LB_CHECK.Name = "LB_CHECK";
+            this.LB_CHECK.Size = new System.Drawing.Size(142, 23);
+            this.LB_CHECK.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -802,6 +825,8 @@
         private System.Windows.Forms.Label LB_IP;
         private System.Windows.Forms.Label LB_ST;
         private System.Windows.Forms.Label LB_LI;
+        private System.Windows.Forms.Label LB_SERIAL;
+        private System.Windows.Forms.Label LB_CHECK;
     }
 }
 
